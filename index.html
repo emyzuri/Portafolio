@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emily Zurita | Mi Portafolio de Ingeniera de Software</title>
+  <meta name="description" content="Portafolio profesional de Emily Zurita, Ingeniera de Software en búsqueda activa de empleo.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Remix Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION MENU (Multi-Page Navbar en 1ª Persona) -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <div class="logo-box">EZ</div>
+        <span>Emily Zurita</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Inicio</a></li>
+        <li><a href="contenidos.html" class="nav-link">Contenidos</a></li>
+        <li><a href="proyectos.html" class="nav-link">Mis Proyectos</a></li>
+        <li><a href="habilidades.html" class="nav-link">Mis Habilidades</a></li>
+        <li><a href="contacto.html" class="nav-link">Contáctame</a></li>
+      </ul>
+
+      <div style="display:flex; align-items:center; gap:10px;">
+        <a href="https://wa.me/593987851567?text=Hola%20Emily,%20vi%20tu%20portafolio%20y%20quiero%20ofrecerte%20un%20trabajo" target="_blank" class="btn btn-whatsapp" style="padding: 8px 16px; font-size: 0.85rem;">
+          <i class="ri-whatsapp-line"></i> Contrátame
+        </a>
+      </div>
+
+      <button class="mobile-menu-btn">
+        <i class="ri-menu-3-line"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE WRAPPER -->
+  <main class="page-wrapper">
+    <div class="container">
+      <!-- Framed Slide Box -->
+      <div class="slide-frame-box">
+        <div class="grid-2">
+          <div>
+            <span class="badge badge-status" style="margin-bottom:16px;">
+              <span class="pulse-dot"></span> 🟢 Buscando Trabajo / Disponible para Contratación
+            </span>
+
+            <h1 class="page-title" style="font-size:3.2rem; margin-top:10px; line-height:1.1;">
+              EMILY ZURITA
+            </h1>
+            <h2 style="font-size:1.6rem; font-weight:800; color:var(--accent-rose); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:18px;">
+              Ingeniera de Software
+            </h2>
+
+            <!-- Text Enclosed inside Framed Box (Primera Persona & Buscando Empleo) -->
+            <div style="background:#f8fafc; border:1px solid #cbd5e1; padding:20px; border-radius:12px; margin:20px 0;">
+              <p style="font-size:1.05rem; color:var(--text-main); font-weight:600; line-height:1.7;">
+                ¡Hola! Te doy la bienvenida a mi portafolio profesional. Soy <strong>Emily Zurita</strong>, Ingeniera de Software Full-Stack. Estoy en búsqueda activa de una oportunidad laboral para integrarme a un equipo de tecnología y aplicar mis conocimientos en desarrollo web, bases de datos y arquitectura de software.
+              </p>
+            </div>
+
+            <!-- Single Button: Ver Contenido -->
+            <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:24px;">
+              <a href="contenidos.html" class="btn btn-primary" style="padding:14px 32px; font-size:1rem;">
+                Ver Mis Contenidos <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Image inside Framed Box -->
+          <div style="border:2px solid #e2e8f0; border-radius:16px; overflow:hidden; box-shadow:0 8px 24px rgba(0,0,0,0.06);">
+            <img src="./assets/emily_illustration.jpg" alt="Emily Zurita Ingeniera de Software" style="width:100%; height:auto; display:block;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Emily Zurita — Mi Portafolio de Ingeniera de Software.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toastNotification">Copiado al portapapeles</div>
+  <script src="app.js"></script>
+</body>
+</html>

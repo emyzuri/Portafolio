@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Notas SGO | Emily Zurita Portfolio</title>
+  <meta name="description" content="Sistema de Notas y Gestión Escolar Oxford Gardens desarrollado por Emily Zurita.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Remix Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION MENU -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <div class="logo-box">EZ</div>
+        <span>Emily Zurita</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="contenidos.html" class="nav-link">Contenidos</a></li>
+        <li><a href="proyectos.html" class="nav-link active">Mis Proyectos</a></li>
+        <li><a href="habilidades.html" class="nav-link">Mis Habilidades</a></li>
+        <li><a href="contacto.html" class="nav-link">Contáctame</a></li>
+      </ul>
+
+      <div style="display:flex; align-items:center; gap:10px;">
+        <a href="https://wa.me/593987851567?text=Hola%20Emily,%20vi%20tu%20portafolio%20y%20quiero%20ofrecerte%20un%20trabajo" target="_blank" class="btn btn-whatsapp" style="padding: 8px 16px; font-size: 0.85rem;">
+          <i class="ri-whatsapp-line"></i> Contrátame
+        </a>
+      </div>
+
+      <button class="mobile-menu-btn">
+        <i class="ri-menu-3-line"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE WRAPPER -->
+  <main class="page-wrapper">
+    <div class="container">
+      <div class="slide-frame-box">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:12px;">
+          <span class="badge badge-status">
+            <span class="pulse-dot"></span> Proyecto Vivo en Producción Real
+          </span>
+          <span class="badge badge-primary">Sistema de Notas Escolar</span>
+        </div>
+
+        <h1 class="page-title">Sistema de Notas (SGO Oxford Gardens)</h1>
+        <p class="page-subtitle">Portal educativo y sistema de notas desarrollado para la institución UE Oxford Gardens.</p>
+
+        <div class="grid-2" style="margin-bottom:32px;">
+          <!-- Real Screenshot uploaded by user -->
+          <div style="border:2px solid #cbd5e1; border-radius:16px; overflow:hidden; box-shadow:0 8px 24px rgba(0,0,0,0.06);">
+            <img src="./assets/sgo_notas.jpg" alt="Sistema de Notas SGO Oxford Gardens" style="width:100%; height:auto; display:block;">
+          </div>
+
+          <!-- Project Description in Box -->
+          <div style="display:flex; flex-direction:column; gap:16px;">
+            <div style="background:#f8fafc; border:1px solid #cbd5e1; padding:20px; border-radius:12px;">
+              <h3 style="font-size:1.1rem; font-weight:800; color:var(--accent-navy); margin-bottom:8px;">📌 Descripción del Sistema</h3>
+              <p style="color:var(--text-muted); font-size:0.95rem; line-height:1.6;">
+                Plataforma web creada para administrar los procesos educativos de la institución: ingreso de notas, expediente del estudiante, asistencias y matrículas en línea.
+              </p>
+            </div>
+
+            <div style="background:#fdf2f8; border:1px solid #fbcfe8; padding:20px; border-radius:12px;">
+              <h3 style="font-size:1.1rem; font-weight:800; color:var(--accent-rose-dark); margin-bottom:8px;">⚡ Módulos & Logros Clave</h3>
+              <ul style="list-style:none; display:flex; flex-direction:column; gap:8px; font-size:0.9rem; color:var(--text-main);">
+                <li><i class="ri-checkbox-circle-line" style="color:var(--accent-rose);"></i> Portal de notas y calificaciones.</li>
+                <li><i class="ri-checkbox-circle-line" style="color:var(--accent-rose);"></i> Autenticación y roles (Admin, Docente, Alumno).</li>
+                <li><i class="ri-checkbox-circle-line" style="color:var(--accent-rose);"></i> Base de datos MySQL optimizada para +3,800 estudiantes.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Badges Frame -->
+        <div style="background:#ffffff; border:1px dashed #cbd5e1; padding:20px; border-radius:12px; margin-bottom:24px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
+          <div>
+            <span style="font-size:0.85rem; font-weight:800; color:var(--text-subtle); display:block; margin-bottom:6px;">TECNOLOGÍAS UTILIZADAS:</span>
+            <div style="display:flex; gap:8px; flex-wrap:wrap;">
+              <span class="badge badge-primary">PHP</span>
+              <span class="badge badge-primary">MySQL</span>
+              <span class="badge badge-primary">JavaScript ES6+</span>
+              <span class="badge badge-primary">HTML5 / CSS3</span>
+              <span class="badge badge-primary">Apache</span>
+            </div>
+          </div>
+
+          <a href="https://sgo.ueoxfordgardens.edu.ec/dashboard_admin.php" target="_blank" class="btn btn-primary">
+            <i class="ri-external-link-line"></i> Abrir Sistema de Notas Vivo
+          </a>
+        </div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; padding-top:20px; border-top:1px solid #e2e8f0;">
+          <a href="proyectos.html" class="btn btn-secondary">
+            <i class="ri-arrow-left-line"></i> Mis Proyectos
+          </a>
+          <a href="habilidades.html" class="btn btn-primary">
+            Siguiente: Mis Habilidades <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Emily Zurita — Mi Portafolio de Ingeniera de Software.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toastNotification">Copiado al portapapeles</div>
+  <script src="app.js"></script>
+</body>
+</html>

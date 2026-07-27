@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Mi Portafolio - Emily Zurita</title>
+  <meta name="description" content="Contacto directo con Emily Zurita, Ingeniera de Software.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Remix Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION MENU -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <div class="logo-box">EZ</div>
+        <span>Emily Zurita</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="contenidos.html" class="nav-link">Contenidos</a></li>
+        <li><a href="proyectos.html" class="nav-link">Mis Proyectos</a></li>
+        <li><a href="habilidades.html" class="nav-link">Mis Habilidades</a></li>
+        <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+      </ul>
+
+      <div style="display:flex; align-items:center; gap:10px;">
+        <a href="https://wa.me/593987851567?text=Hola%20Emily,%20vi%20tu%20portafolio%20y%20quiero%20ofrecerte%20un%20trabajo" target="_blank" class="btn btn-whatsapp" style="padding: 8px 16px; font-size: 0.85rem;">
+          <i class="ri-whatsapp-line"></i> Contrátame
+        </a>
+      </div>
+
+      <button class="mobile-menu-btn">
+        <i class="ri-menu-3-line"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE WRAPPER -->
+  <main class="page-wrapper">
+    <div class="container">
+      <div class="slide-frame-box">
+        <!-- Exact Title requested: CONTACTO -->
+        <div style="background:#f8fafc; border:1px solid #cbd5e1; padding:20px; border-radius:12px; margin-bottom:28px;">
+          <h1 class="page-title" style="margin-bottom:6px;">CONTACTO</h1>
+          <!-- Exact Subtitle requested -->
+          <p style="color:var(--text-subtle); font-size:1.05rem; font-weight:600; margin:0;">
+            Estoy buscando trabajo de forma activa. Si tienes una propuesta laboral o una vacante para mi perfil, escríbeme directamente por cualquiera de estos medios:
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <!-- Contact Details -->
+          <div style="display:flex; flex-direction:column; gap:20px;">
+            <!-- Email Box -->
+            <div style="background:#f8fafc; border:1px solid #cbd5e1; padding:20px; border-radius:12px; display:flex; align-items:center; gap:16px;">
+              <div style="width:44px; height:44px; border-radius:10px; background:var(--accent-navy); color:#ffffff; display:flex; align-items:center; justify-content:center; font-size:1.25rem;">
+                <i class="ri-mail-send-line"></i>
+              </div>
+              <div>
+                <span style="font-size:0.8rem; color:var(--text-subtle); display:block; font-weight:700;">MI CORREO ELECTRÓNICO</span>
+                <strong onclick="copyText('emilyzurita17@gmail.com', 'Mi Correo')" style="font-size:1.05rem; color:var(--accent-navy); cursor:pointer;" title="Clic para copiar">
+                  emilyzurita17@gmail.com <i class="ri-file-copy-line" style="font-size:0.85rem; color:var(--accent-indigo);"></i>
+                </strong>
+              </div>
+            </div>
+
+            <!-- WhatsApp Box -->
+            <div style="background:#f0fdf4; border:1px solid #bbf7d0; padding:20px; border-radius:12px; display:flex; align-items:center; gap:16px;">
+              <div style="width:44px; height:44px; border-radius:10px; background:#25D366; color:#ffffff; display:flex; align-items:center; justify-content:center; font-size:1.35rem;">
+                <i class="ri-whatsapp-line"></i>
+              </div>
+              <div>
+                <span style="font-size:0.8rem; color:var(--text-subtle); display:block; font-weight:700;">MI TELÉFONO / WHATSAPP</span>
+                <a href="https://wa.me/593987851567?text=Hola%20Emily,%20vi%20tu%20portafolio%20y%20quiero%20ofrecerte%20un%20trabajo" target="_blank" style="font-size:1.05rem; color:#166534; font-weight:800; text-decoration:none;">
+                  +593 98 785 1567 <i class="ri-external-link-line"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- LinkedIn Box -->
+            <div style="background:#eff6ff; border:1px solid #bfdbfe; padding:20px; border-radius:12px; display:flex; align-items:center; gap:16px;">
+              <div style="width:44px; height:44px; border-radius:10px; background:#0a66c2; color:#ffffff; display:flex; align-items:center; justify-content:center; font-size:1.35rem;">
+                <i class="ri-linkedin-fill"></i>
+              </div>
+              <div>
+                <span style="font-size:0.8rem; color:var(--text-subtle); display:block; font-weight:700;">MI PERFIL DE LINKEDIN</span>
+                <a href="https://www.linkedin.com/in/emily-zurita-7538342b9" target="_blank" style="font-size:1.05rem; color:#1e40af; font-weight:800; text-decoration:none;">
+                  linkedin.com/in/emily-zurita <i class="ri-external-link-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct Form Box -->
+          <div style="background:#ffffff; border:1px solid #cbd5e1; padding:28px; border-radius:14px;">
+            <h3 style="font-size:1.25rem; font-weight:800; color:var(--accent-navy); margin-bottom:6px;">📩 Envíame un Mensaje Directo</h3>
+            <p style="font-size:0.85rem; color:var(--text-subtle); margin-bottom:16px;">
+              El mensaje se enviará directamente a <strong>emilyzurita17@gmail.com</strong>.
+            </p>
+
+            <form id="contactForm" style="display:flex; flex-direction:column; gap:16px;">
+              <div>
+                <label style="font-size:0.85rem; font-weight:700; display:block; margin-bottom:4px;">Tu Nombre o Empresa</label>
+                <input type="text" id="senderName" class="form-input" style="width:100%; padding:10px 14px; border-radius:8px; border:1px solid #cbd5e1;" required placeholder="Ej. Empresa / Reclutador">
+              </div>
+
+              <div>
+                <label style="font-size:0.85rem; font-weight:700; display:block; margin-bottom:4px;">Tu Correo Electrónico</label>
+                <input type="email" id="senderEmail" class="form-input" style="width:100%; padding:10px 14px; border-radius:8px; border:1px solid #cbd5e1;" required placeholder="correo@empresa.com">
+              </div>
+
+              <div>
+                <label style="font-size:0.85rem; font-weight:700; display:block; margin-bottom:4px;">Mensaje</label>
+                <textarea id="senderMessage" class="form-textarea" style="width:100%; padding:10px 14px; border-radius:8px; border:1px solid #cbd5e1; min-height:100px;" required placeholder="Escribe tu propuesta o vacante para Emily..."></textarea>
+              </div>
+
+              <button type="submit" id="submitBtn" class="btn btn-primary" style="width:100%; font-size:1rem; padding:12px;">
+                <i class="ri-send-plane-fill"></i> Enviar Mensaje Directo
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:36px; padding-top:20px; border-top:1px solid #e2e8f0;">
+          <a href="habilidades.html" class="btn btn-secondary">
+            <i class="ri-arrow-left-line"></i> Mis Habilidades
+          </a>
+          <a href="index.html" class="btn btn-primary">
+            Volver al Inicio <i class="ri-home-4-line"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Emily Zurita — Mi Portafolio de Ingeniera de Software.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toastNotification">Copiado al portapapeles</div>
+  <script src="app.js"></script>
+</body>
+</html>
