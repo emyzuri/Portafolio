@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emily Zurita | Mi Portafolio de Ingeniera de Software</title>
-  <meta name="description" content="Portafolio profesional de Emily Zurita, Ingeniera de Software en búsqueda activa de empleo.">
+  <title>Emily Zurita | Portafolio de Ingeniera de Software</title>
+  <meta name="description" content="Portafolio profesional de Emily Zurita, estudiante de Ingeniería de Software en ESPOCH en búsqueda activa de trabajo.">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,80 +19,323 @@
 </head>
 <body>
 
-  <!-- NAVIGATION MENU (Multi-Page Navbar en 1ª Persona) -->
-  <nav class="navbar">
-    <div class="container nav-container">
-      <a href="index.html" class="nav-brand">
-        <div class="logo-box">EZ</div>
-        <span>Emily Zurita</span>
-      </a>
-
-      <ul class="nav-links">
-        <li><a href="index.html" class="nav-link active">Inicio</a></li>
-        <li><a href="contenidos.html" class="nav-link">Contenidos</a></li>
-        <li><a href="proyectos.html" class="nav-link">Mis Proyectos</a></li>
-        <li><a href="habilidades.html" class="nav-link">Mis Habilidades</a></li>
-        <li><a href="contacto.html" class="nav-link">Contáctame</a></li>
-      </ul>
-
-      <div style="display:flex; align-items:center; gap:10px;">
-        <a href="https://wa.me/593987851567?text=Hola%20Emily,%20vi%20tu%20portafolio%20y%20quiero%20ofrecerte%20un%20trabajo" target="_blank" class="btn btn-whatsapp" style="padding: 8px 16px; font-size: 0.85rem;">
-          <i class="ri-whatsapp-line"></i> Contrátame
-        </a>
-      </div>
-
-      <button class="mobile-menu-btn">
-        <i class="ri-menu-3-line"></i>
-      </button>
-    </div>
-  </nav>
-
-  <!-- PAGE WRAPPER -->
-  <main class="page-wrapper">
+  <!-- TOP HEADER CON LOGOS DE CERTIFICACIONES -->
+  <header class="top-header">
     <div class="container">
-      <!-- Framed Slide Box -->
-      <div class="slide-frame-box">
+      <div class="header-row">
+        <!-- Brand -->
+        <div class="header-brand">
+          <div class="brand-badge">EZ</div>
+          <div class="brand-info">
+            <h1>Emily Zurita</h1>
+            <span>Ingeniera de Software (ESPOCH)</span>
+          </div>
+        </div>
+
+        <!-- Certifications LOGOS ONLY in Header -->
+        <div class="cert-header-strip">
+          <div class="cert-logo-badge" title="Santander Open Academy - JS & IA (40h)">
+            <i class="ri-bank-card-line"></i> Santander
+          </div>
+          <div class="cert-logo-badge" title="University of Maryland - Cybersecurity">
+            <i class="ri-shield-keyhole-line"></i> Maryland
+          </div>
+          <div class="cert-logo-badge" title="Google / Conecta Empleo - IA & Digital (40h)">
+            <i class="ri-google-fill"></i> Google
+          </div>
+          <div class="cert-logo-badge" title="Udemy - PHP & MySQL (40h)">
+            <i class="ri-code-s-slash-line"></i> Udemy
+          </div>
+          <div class="cert-logo-badge" title="Centro de Idiomas ESPOCH - Cambridge">
+            <i class="ri-global-line"></i> Cambridge
+          </div>
+        </div>
+
+        <!-- Action Button -->
+        <div>
+          <a href="https://wa.me/593987851567?text=Hola%20Emily,%20vi%20tu%20portafolio%20y%20quiero%20contactarte" target="_blank" class="btn btn-whatsapp" style="padding:6px 14px; font-size:0.775rem;">
+            <i class="ri-whatsapp-line"></i> CONTÁCTAME
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN SINGLE PAGE WRAPPER -->
+  <main class="main-wrapper">
+    <div class="container">
+
+      <!-- SECTION 1: PRESENTACIÓN -->
+      <section class="slide-box">
         <div class="grid-2">
           <div>
-            <span class="badge badge-status" style="margin-bottom:16px;">
-              <span class="pulse-dot"></span> 🟢 Buscando Trabajo / Disponible para Contratación
-            </span>
-
-            <h1 class="page-title" style="font-size:3.2rem; margin-top:10px; line-height:1.1;">
+            <h1 style="font-size:1.8rem; font-weight:900; color:var(--accent-navy); margin-top:2px; line-height:1.1;">
               EMILY ZURITA
             </h1>
-            <h2 style="font-size:1.6rem; font-weight:800; color:var(--accent-rose); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:18px;">
+            <h2 style="font-size:1.05rem; font-weight:800; color:var(--accent-rose-dark); text-transform:uppercase; margin-bottom:10px;">
               Ingeniera de Software
             </h2>
 
-            <!-- Text Enclosed inside Framed Box (Primera Persona & Buscando Empleo) -->
-            <div style="background:#f8fafc; border:1px solid #cbd5e1; padding:20px; border-radius:12px; margin:20px 0;">
-              <p style="font-size:1.05rem; color:var(--text-main); font-weight:600; line-height:1.7;">
-                ¡Hola! Te doy la bienvenida a mi portafolio profesional. Soy <strong>Emily Zurita</strong>, Ingeniera de Software Full-Stack. Estoy en búsqueda activa de una oportunidad laboral para integrarme a un equipo de tecnología y aplicar mis conocimientos en desarrollo web, bases de datos y arquitectura de software.
+            <!-- Text Enclosed in Box (Bio Concisa) -->
+            <div style="background:#f8fafc; border:1.2px solid #cbd5e1; padding:12px 14px; border-radius:8px; margin-bottom:12px;">
+              <p style="font-size:0.875rem; color:var(--text-main); font-weight:600; line-height:1.5;">
+                Ingeniera de Software en formación (ESPOCH) especializada en desarrollo Full-Stack, bases de datos y arquitectura de sistemas web. Enfocada en soluciones eficientes y proyectos de alto impacto.
               </p>
             </div>
 
-            <!-- Single Button: Ver Contenido -->
-            <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:24px;">
-              <a href="contenidos.html" class="btn btn-primary" style="padding:14px 32px; font-size:1rem;">
-                Ver Mis Contenidos <i class="ri-arrow-right-line"></i>
+            <div style="display:flex; gap:8px; flex-wrap:wrap;">
+              <a href="#habilidades" class="btn btn-primary">
+                Ver Habilidades <i class="ri-arrow-down-line"></i>
+              </a>
+              <a href="#proyectos" class="btn btn-secondary">
+                Ver Proyectos
               </a>
             </div>
           </div>
 
-          <!-- Image inside Framed Box -->
-          <div style="border:2px solid #e2e8f0; border-radius:16px; overflow:hidden; box-shadow:0 8px 24px rgba(0,0,0,0.06);">
-            <img src="./assets/emily_illustration.jpg" alt="Emily Zurita Ingeniera de Software" style="width:100%; height:auto; display:block;">
+          <!-- Illustration Container -->
+          <div style="display:flex; justify-content:center; align-items:center;">
+            <div style="border:2px solid #cbd5e1; border-radius:18px; padding:6px; background:#ffffff; box-shadow:0 6px 18px rgba(0,0,0,0.05); width:fit-content;">
+              <img src="./assets/emily_illustration.jpg" alt="Emily Zurita Ingeniera de Software ESPOCH" style="max-height:250px; width:auto; border-radius:14px; display:block;">
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!-- SECTION 2: HABILIDADES -->
+      <section id="habilidades" class="slide-box">
+        <h2 class="section-title">
+          <i class="ri-cpu-line" style="color:var(--accent-rose);"></i> Mis Habilidades Técnicas
+        </h2>
+        <p class="section-desc">Listado de competencias clave y stack de tecnologías:</p>
+
+        <div class="grid-3">
+          <!-- Backend Card -->
+          <div class="card-box">
+            <h3 style="font-size:0.9rem; font-weight:800; color:var(--accent-navy); margin-bottom:10px; display:flex; align-items:center; gap:6px;">
+              <i class="ri-code-box-line" style="color:var(--accent-navy);"></i> Desarrollo Backend
+            </h3>
+            <div style="background:#f8fafc; border:1px solid #e2e8f0; padding:12px; border-radius:8px; height:100%;">
+              <ul style="list-style:none; display:flex; flex-direction:column; gap:8px; font-size:0.8rem; color:var(--text-main); font-weight:600;">
+                <li><i class="ri-checkbox-circle-fill" style="color:var(--accent-navy);"></i> PHP & Programación Orientada a Objetos</li>
+                <li><i class="ri-checkbox-circle-fill" style="color:var(--accent-navy);"></i> MySQL & Modelado de Bases de Datos</li>
+                <li><i class="ri-checkbox-circle-fill" style="color:var(--accent-navy);"></i> Desarrollo de APIs RESTful & C# (.NET Core)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Frontend Card -->
+          <div class="card-box">
+            <h3 style="font-size:0.9rem; font-weight:800; color:var(--accent-navy); margin-bottom:10px; display:flex; align-items:center; gap:6px;">
+              <i class="ri-layout-3-line" style="color:var(--accent-rose-dark);"></i> Desarrollo Frontend
+            </h3>
+            <div style="background:#fdf2f8; border:1px solid #fbcfe8; padding:12px; border-radius:8px; height:100%;">
+              <ul style="list-style:none; display:flex; flex-direction:column; gap:8px; font-size:0.8rem; color:var(--text-main); font-weight:600;">
+                <li><i class="ri-checkbox-circle-fill" style="color:var(--accent-rose-dark);"></i> JavaScript ES6+ & Angular</li>
+                <li><i class="ri-checkbox-circle-fill" style="color:var(--accent-rose-dark);"></i> HTML5 & CSS3 Responsive Layouts</li>
+                <li><i class="ri-checkbox-circle-fill" style="color:var(--accent-rose-dark);"></i> Diseño Limpio, UX/UI & Componentes</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Tools Card -->
+          <div class="card-box">
+            <h3 style="font-size:0.9rem; font-weight:800; color:var(--accent-navy); margin-bottom:10px; display:flex; align-items:center; gap:6px;">
+              <i class="ri-tools-line" style="color:#047857;"></i> Servidores & Herramientas
+            </h3>
+            <div style="background:#ecfdf5; border:1px solid #a7f3d0; padding:12px; border-radius:8px; height:100%;">
+              <ul style="list-style:none; display:flex; flex-direction:column; gap:8px; font-size:0.8rem; color:var(--text-main); font-weight:600;">
+                <li><i class="ri-checkbox-circle-fill" style="color:#047857;"></i> XAMPP</li>
+                <li><i class="ri-checkbox-circle-fill" style="color:#047857;"></i> Git, GitHub & Control de Versiones</li>
+                <li><i class="ri-checkbox-circle-fill" style="color:#047857;"></i> Ciberseguridad, Autenticación & Roles</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: MIS PROYECTOS -->
+      <section id="proyectos" class="slide-box">
+        <h2 class="section-title">
+          <i class="ri-folder-code-line" style="color:var(--accent-rose);"></i> Mis Proyectos
+        </h2>
+        <p class="section-desc">Muestra de desarrollo de software y páginas web creadas:</p>
+
+        <div class="grid-4">
+          <!-- Project 1: Sistema de Notas SGO Oxford Gardens -->
+          <div class="card-box">
+            <div class="card-thumb">
+              <img src="./assets/sgo_notas.jpg" alt="Sistema de Notas SGO Oxford Gardens">
+            </div>
+            <span class="badge badge-status" style="margin-bottom:4px; width:fit-content; font-size:0.6rem;">En Producción</span>
+            <h4 style="font-size:0.85rem; font-weight:800; color:var(--accent-navy); margin-bottom:3px;">Sistema de Notas SGO</h4>
+            <p style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px; line-height:1.3;">
+              Portal educativo y notas para la institución UE Oxford Gardens.
+            </p>
+
+            <div style="margin-top:auto;">
+              <div style="display:flex; gap:3px; flex-wrap:wrap; margin-bottom:6px;">
+                <span class="badge badge-primary" style="font-size:0.6rem;">PHP</span>
+                <span class="badge badge-primary" style="font-size:0.6rem;">MySQL</span>
+              </div>
+              <a href="https://sgo.ueoxfordgardens.edu.ec/dashboard_admin.php" target="_blank" class="btn btn-primary" style="padding:4px; font-size:0.65rem; width:100%;">
+                Abrir Sistema <i class="ri-external-link-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2: Página Web Institucional UE Oxford Gardens -->
+          <div class="card-box">
+            <div class="card-thumb">
+              <img src="./assets/ogs_website.png" alt="Página Web Institucional UE Oxford Gardens">
+            </div>
+            <span class="badge badge-rose" style="margin-bottom:4px; width:fit-content; font-size:0.6rem;">Web Institucional</span>
+            <h4 style="font-size:0.85rem; font-weight:800; color:var(--accent-navy); margin-bottom:3px;">Página Web UE Oxford Gardens</h4>
+            <p style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px; line-height:1.3;">
+              Sitio web oficial desarrollado para la institución educativa UE Oxford Gardens.
+            </p>
+
+            <div style="margin-top:auto;">
+              <div style="display:flex; gap:3px; flex-wrap:wrap; margin-bottom:6px;">
+                <span class="badge badge-rose" style="font-size:0.6rem;">HTML5</span>
+                <span class="badge badge-rose" style="font-size:0.6rem;">CSS3</span>
+                <span class="badge badge-rose" style="font-size:0.6rem;">JS</span>
+              </div>
+              <a href="https://ueoxfordgardens.edu.ec" target="_blank" class="btn btn-secondary" style="padding:4px; font-size:0.65rem; width:100%;">
+                Visitar Sitio Web <i class="ri-earth-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3: CETVI Civil Engineering Lab -->
+          <div class="card-box">
+            <div class="card-thumb">
+              <img src="./assets/cetvi_lab.png" alt="Laboratorio de Ingeniería Civil CETVI">
+            </div>
+            <span class="badge badge-rose" style="margin-bottom:4px; width:fit-content; font-size:0.6rem;">Ingeniería Civil</span>
+            <h4 style="font-size:0.85rem; font-weight:800; color:var(--accent-navy); margin-bottom:3px;">Laboratorio CETVI</h4>
+            <p style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px; line-height:1.3;">
+              Gestión de ensayos técnicos de materiales e informes.
+            </p>
+
+            <div style="margin-top:auto;">
+              <div style="display:flex; gap:3px; flex-wrap:wrap;">
+                <span class="badge badge-rose" style="font-size:0.6rem;">Angular</span>
+                <span class="badge badge-rose" style="font-size:0.6rem;">.NET</span>
+                <span class="badge badge-rose" style="font-size:0.6rem;">SQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Rental Apartment System -->
+          <div class="card-box">
+            <div class="card-thumb">
+              <img src="./assets/alquiler_departamentos.jpg" alt="Sistema de Alquiler de Departamentos">
+            </div>
+            <span class="badge badge-primary" style="margin-bottom:4px; width:fit-content; font-size:0.6rem;">Inmobiliario</span>
+            <h4 style="font-size:0.85rem; font-weight:800; color:var(--accent-navy); margin-bottom:3px;">Alquiler Departamentos</h4>
+            <p style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px; line-height:1.3;">
+              Plataforma de publicación y gestión de reservas.
+            </p>
+
+            <div style="margin-top:auto;">
+              <div style="display:flex; gap:3px; flex-wrap:wrap;">
+                <span class="badge badge-primary" style="font-size:0.6rem;">Full Stack</span>
+                <span class="badge badge-primary" style="font-size:0.6rem;">MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: CONTACTO -->
+      <section id="contacto" class="slide-box">
+        <h2 class="section-title">
+          <i class="ri-mail-send-line" style="color:var(--accent-rose);"></i> Contacto
+        </h2>
+        <p class="section-desc">Estoy buscando trabajo de forma activa. Si tienes una propuesta laboral o una vacante para mi perfil, escríbeme directamente por cualquiera de estos medios:</p>
+
+        <div class="grid-2">
+          <!-- Details -->
+          <div style="display:flex; flex-direction:column; gap:10px;">
+            <!-- Email -->
+            <div style="background:#f8fafc; border:1.2px solid #cbd5e1; padding:10px; border-radius:8px; display:flex; align-items:center; gap:10px;">
+              <div style="width:32px; height:32px; border-radius:6px; background:var(--accent-navy); color:#ffffff; display:flex; align-items:center; justify-content:center; font-size:1rem;">
+                <i class="ri-mail-line"></i>
+              </div>
+              <div>
+                <span style="font-size:0.65rem; color:var(--text-subtle); display:block; font-weight:700;">CORREO ELECTRÓNICO</span>
+                <strong onclick="copyText('emilyzurita17@gmail.com', 'Mi Correo')" style="font-size:0.85rem; color:var(--accent-navy); cursor:pointer;" title="Clic para copiar">
+                  emilyzurita17@gmail.com <i class="ri-file-copy-line" style="font-size:0.7rem; color:var(--accent-indigo);"></i>
+                </strong>
+              </div>
+            </div>
+
+            <!-- WhatsApp -->
+            <div style="background:#f0fdf4; border:1.5px solid #bbf7d0; padding:10px; border-radius:8px; display:flex; align-items:center; gap:10px;">
+              <div style="width:32px; height:32px; border-radius:6px; background:#25D366; color:#ffffff; display:flex; align-items:center; justify-content:center; font-size:1rem;">
+                <i class="ri-whatsapp-line"></i>
+              </div>
+              <div>
+                <span style="font-size:0.65rem; color:var(--text-subtle); display:block; font-weight:700;">WHATSAPP / TELÉFONO</span>
+                <a href="https://wa.me/593987851567?text=Hola%20Emily,%20vi%20tu%20portafolio%20y%20quiero%20contactarte" target="_blank" style="font-size:0.85rem; color:#166534; font-weight:800; text-decoration:none;">
+                  +593 98 785 1567 <i class="ri-external-link-line"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div style="background:#eff6ff; border:1.5px solid #bfdbfe; padding:10px; border-radius:8px; display:flex; align-items:center; gap:10px;">
+              <div style="width:32px; height:32px; border-radius:6px; background:#0a66c2; color:#ffffff; display:flex; align-items:center; justify-content:center; font-size:1rem;">
+                <i class="ri-linkedin-fill"></i>
+              </div>
+              <div>
+                <span style="font-size:0.65rem; color:var(--text-subtle); display:block; font-weight:700;">LINKEDIN</span>
+                <a href="https://www.linkedin.com/in/emily-zurita-7538342b9" target="_blank" style="font-size:0.85rem; color:#1e40af; font-weight:800; text-decoration:none;">
+                  linkedin.com/in/emily-zurita <i class="ri-external-link-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div style="background:#ffffff; border:1.2px solid #cbd5e1; padding:14px; border-radius:10px;">
+            <h4 style="font-size:0.95rem; font-weight:800; color:var(--accent-navy); margin-bottom:2px;">📩 Envíame un Mensaje Directo</h4>
+            <p style="font-size:0.7rem; color:var(--text-subtle); margin-bottom:8px;">
+              El mensaje llegará directo a <strong>emilyzurita17@gmail.com</strong>.
+            </p>
+
+            <form id="contactForm" style="display:flex; flex-direction:column; gap:8px;">
+              <div class="form-group">
+                <label>Tu Nombre o Empresa</label>
+                <input type="text" id="senderName" class="form-control" required placeholder="Ej. Empresa / Reclutador">
+              </div>
+
+              <div class="form-group">
+                <label>Tu Correo Electrónico</label>
+                <input type="email" id="senderEmail" class="form-control" required placeholder="correo@empresa.com">
+              </div>
+
+              <div class="form-group">
+                <label>Mensaje</label>
+                <textarea id="senderMessage" class="form-control" style="min-height:60px;" required placeholder="Escribe tu propuesta o vacante para Emily..."></textarea>
+              </div>
+
+              <button type="submit" id="submitBtn" class="btn btn-primary" style="width:100%; padding:8px;">
+                <i class="ri-send-plane-fill"></i> Enviar Mensaje Directo
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
     </div>
   </main>
 
   <!-- FOOTER -->
   <footer>
     <div class="container">
-      <p>© 2026 Emily Zurita — Mi Portafolio de Ingeniera de Software.</p>
+      <p>© 2026 Emily Zurita — Estudiante de Ingeniería de Software (ESPOCH).</p>
     </div>
   </footer>
 
